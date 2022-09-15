@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav div {
+  margin: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+nav div p {
+  margin: 0;
+}
