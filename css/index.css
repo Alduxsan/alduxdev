@@ -30,7 +30,7 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  background: url("../res/media/alduxPortrait.png");
+  background: url("../res/media/alduxPortrait1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
