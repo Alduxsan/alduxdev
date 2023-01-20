@@ -1,32 +1,560 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aldo Santarelli Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
-    <nav>
-        <div>
-            <p>About me</p>
+  <body>
+    <div class="container">
+      <div class="header_container">
+        <div class="header_info_photo fade-in">
+          <div class="name_role">
+            <p id="name">ALDO SANTARELLI</p>
+            <div class="role">
+              <span class="typewriter"></span>
+              <p aria-label="fullstack developer">developer</p>
+            </div>
+          </div>
         </div>
-        <div>
-            <p>My work</p>
+        <div class="sections" id="links_container">
+          <a class="section_link" href="#about_section"
+            ><img src="res/media/aboutme.png" alt="about me section link" />
+            <p id="aboutme">ABOUT ME &nbsp</p>
+            <span class="aboutme_line line"></span
+          ></a>
+          <a class="section_link" href="#experience_section"
+            ><img src="res/media/expertise.png" alt="experience section link" />
+            <p id="experience">EXPERIENCE</p>
+            <span class="experience_line line"></span
+          ></a>
+          <a class="section_link" href="#knowledge_section"
+            ><img src="res/media/knowledge.png" alt="knowledge section link" />
+            <p id="knowledge">KNOWLEDGE</p>
+            <span class="knowledge_line line"></span
+          ></a>
         </div>
-        <div>
-            <p>What i seek?</p>
+      </div>
+      <section class="about_content" id="about_section">
+        <p class="section_title" id="about_title">ABOUT ME</p>
+        <p class="">
+          <strong>I love technology.</strong> I've been tinkering around
+          computers since I was 8 years old, getting into software and web
+          development has been a natural step for me. I also love cats, good
+          literature and board games.
+        </p>
+        <h3 class="">What can I offer you?</h3>
+        <p class="">
+          If your company is looking for a junior Frontend or Full stack
+          developer, I'm your guy. By hiring me, you will not only improve your
+          human resources with someone committed to the company's objective,
+          capable of working alone or in teams. But you also hire a future
+          expert, since I am currently studying for an IT Analyst degree.
+        </p>
+        <h3 class="contact_me">Contact me</h3>
+        <div class="contact_icons_container">
+          <div class="contact_icon">
+            <a
+              class="contact_link"
+              href="https://www.linkedin.com/in/santarelli-developer/"
+              target="_blank"
+              ><img
+                src="res/media/linkedin.png"
+                alt="linkedin contact icon"
+                id="linkedin"
+            /></a>
+            <div class="icon_name"><p>LINKEDIN</p></div>
+          </div>
+          <div class="contact_icon">
+            <a
+              class="contact_link"
+              href="mailto:aldosantarelli@gmail.com"
+              target="_blank"
+              ><img
+                src="res/media/gmail.png"
+                alt="gmail contact icon"
+                id="gmail"
+            /></a>
+            <div class="icon_name"><p>GMAIL</p></div>
+          </div>
+          <div class="contact_icon">
+            <a
+              class="contact_link"
+              href="https://github.com/Alduxsan"
+              target="_blank"
+              ><img
+                src="res/media/github.png"
+                alt="github contact icon"
+                id="github"
+            /></a>
+            <div class="icon_name"><p>GITHUB</p></div>
+          </div>
         </div>
-    </nav>
-    <div class="nameRole">
-        <h2 class="name">ALDO SANTARELLI</h2>
-        <h4 class="role">Fullstack developer</h4>
+      </section>
+      <section class="experience_content" id="experience_section">
+        <p class="section_title" id="experience_title">EXPERIENCE</p>
+
+        <div class="projects_list">
+          <div class="projectItem">
+            <div class="iconProject">
+              <div class="project_icon_container">
+                <img src="res/media/projects/piptu.png" alt="PIPTU icon" />
+              </div>
+
+              <div class="resume_container">
+                <p class="project_title">
+                  Web Site - Programa Investigación de <br />
+                  Poblamiento Temprano en Uruguay
+                </p>
+                <p class="project_resume">
+                  A web page for an investigation of the Antropology department
+                  in the Universidad de la República <br />
+                </p>
+                <span class="used_techs">
+                  <img src="res/media/tech_Icons/js.png" alt="javascript" />
+                  <img src="res/media/tech_Icons/html.png" alt="html" />
+                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                </span>
+              </div>
+            </div>
+            <div class="projectInfo">
+              <p>
+                Como único desarrollador estuve a cargo tanto del área Frontend
+                como Backend. Uno de los desafíos más interesantes durante el
+                desarrollo del sitio fue la integración de Native Web
+                Components, muy útiles dada la alta repetición de items
+                similares en cada página. A nivel visual se buscó simpleza y una
+                fácil lectura de los contenidos expuestos, mayoritariamente de
+                divulgación científica. Las tecnologías utilizadas en el
+                proyecto fueron HTML, CSS y Javascript.
+              </p>
+              <a
+                class="link_to_project"
+                href="https://piptu.vercel.app/index.html"
+                target="_blank"
+              >
+                <img
+                  src="res/media/web-browser.png"
+                  alt="link to project"
+                />Check the project</a
+              >
+            </div>
+          </div>
+          <div class="projectItem">
+            <div class="iconProject">
+              <div class="project_icon_container">
+                <img src="res/media/projects/SIGLA.jpg" alt="SIGLA icon" />
+              </div>
+
+              <div class="resume_container">
+                <p class="project_title">
+                  Web App - Sistema de Gestion para Logistica Agraria (SIGLA)
+                </p>
+                <p class="project_resume">
+                  Web app para digitalizar, agilizar y simplificar las gestiones
+                  de la industria cerealera en Uruguay
+                </p>
+                <span class="used_techs">
+                  <img src="res/media/tech_Icons/python.png" alt="python" />
+                  <img src="res/media/tech_Icons/django.png" alt="django" />
+                  <img src="res/media/tech_Icons/html.png" alt="html" />
+                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                </span>
+              </div>
+            </div>
+            <div class="projectInfo">
+              <p>
+                Como miembro del equipo de desarrollo de Sauce Software, estuve
+                involucrado en todos los ámbitos del proyecto. Como
+                desarrollador Frontend realicé tareas en todas las secciones de
+                la web. Como desarrollador Backend tuve a mi cargo el desarrollo
+                de los modelos (utilizamos Django como framework) necesarios
+                para la base de datos, las funcionalidades críticas de cada paso
+                del sistema (con énfasis en las que afectan los datos de los
+                modelos), la implementación del proceso de login y la
+                integración de la API de Twillio para el envío de sms desde la
+                plataforma. <br /><br />
+                A grandes rasgos la plataforma permite a un productor de
+                cereales inscribirse y solicitar el comienzo de operaciones de
+                carga a la empresa cerealera. Mediante sus operadores la empresa
+                puede monitorear todas las solicitudes recibidas y tomar
+                decisiones al respecto, ya sea cancelarlas, mantenerlas en
+                espera o aceptarlas. En caso de que una solicitud sea aceptada
+                la plataforma envía un mensaje automático a los transportistas
+                con la información de la cantidad de carga, tipo y ubicación.
+              </p>
+              <a
+                class="link_to_project"
+                href="https://github.com/Alduxsan/sigla"
+                target="_blank"
+              >
+                <img
+                  src="res/media/web-browser.png"
+                  alt="link to project"
+                />Check the project</a
+              >
+            </div>
+          </div>
+
+          <div class="projectItem">
+            <div class="iconProject">
+              <div class="project_icon_container">
+                <img
+                  src="res/media/projects/mediguard_icon.png"
+                  alt="MEDIGUARD icon"
+                />
+              </div>
+
+              <div class="resume_container">
+                <p class="project_title">Android App - Aplicación Mediguard,</p>
+                <p class="project_resume">
+                  Android App for the medical guards management.
+                </p>
+                <span class="used_techs">
+                  <img src="res/media/tech_Icons/android.png" alt="android" />
+                  <img src="res/media/tech_Icons/java.png" alt="java" />
+                  <img src="res/media/tech_Icons/python.png" alt="python" />
+                  <img src="res/media/tech_Icons/django.png" alt="django" />
+                </span>
+              </div>
+            </div>
+            <div class="projectInfo">
+              <p>
+                Como parte del equipo de desarrollo de Chimera Software me
+                encargué del desarrollo del backend y API (utilizando Django)
+                para conectar la BD con la aplicación android. Además desarrollé
+                las pantallas de Login (frontend y lógica), Información Personal
+                del usuario, y detalles visuales en todas las pantallas de la
+                app.
+              </p>
+              <a
+                class="link_to_project"
+                href="https://github.com/Alduxsan/AndroidMediGuard"
+                target="_blank"
+              >
+                <img
+                  src="res/media/web-browser.png"
+                  alt="link to project"
+                />Check the Android project</a
+              >
+              <a
+                class="link_to_project"
+                href="https://github.com/Alduxsan/AgendaGuardiasMedicas"
+                target="_blank"
+              >
+                <img
+                  src="res/media/web-browser.png"
+                  alt="link to project"
+                />Check the Backend / API section of the project</a
+              >
+            </div>
+          </div>
+          <div class="projectItem">
+            <div class="iconProject">
+              <div class="project_icon_container">
+                <img
+                  src="res/media/projects/puntoverde.png"
+                  alt="Punto verde icon"
+                />
+              </div>
+
+              <div class="resume_container">
+                <p class="project_title">
+                  Web Site - Punto Verde Nueva Palmira
+                </p>
+                <p class="project_resume">
+                  Static web site for the Punto Verde Nueva Palmira ambiental
+                  ONG.
+                </p>
+                <span class="used_techs">
+                  <img src="res/media/tech_Icons/js.png" alt="javascript" />
+                  <img src="res/media/tech_Icons/html.png" alt="html" />
+                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                </span>
+              </div>
+            </div>
+            <div class="projectInfo">
+              <p>
+                Como único desarrollador, estuve a cargo del diseño gráfico y
+                Frontend de la página. Se buscó generar calidez e inmersión en
+                la experiencia de usuario mediante colores pastales, formas
+                redondeadas e imágenes naturales.
+              </p>
+              <a
+                class="link_to_project"
+                href="https://github.com/Alduxsan/puntoverde"
+                target="_blank"
+              >
+                <img
+                  src="res/media/web-browser.png"
+                  alt="link to project"
+                />Check the project</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="knowledge_content" id="knowledge_section">
+        <p class="section_title" id="knowledge_title">KNOWLEDGE</p>
+        <p class="subsection_title">Main Certifications</p>
+
+        <div class="main_certifications">
+          <a
+            href="https://www.linkedin.com/in/santarelli-developer/details/education/"
+            target="_blank"
+            ><div class="star_icon_container">
+              <img src="res/media/star.png" alt="star" />
+              <p>IT ANALYST</p>
+            </div></a
+          >
+          <a
+            href="https://www.linkedin.com/in/santarelli-developer/details/education/"
+            target="_blank"
+            ><div class="star_icon_container">
+              <img src="res/media/star.png" alt="star" />
+              <p>PROGRAMMER</p>
+            </div></a
+          >
+          <a
+            href="https://www.linkedin.com/in/santarelli-developer/details/education/"
+            target="_blank"
+            ><div class="star_icon_container">
+              <img src="res/media/star.png" alt="star" />
+              <p>IT SUPPORT</p>
+            </div></a
+          >
+        </div>
+        <p class="subsection_title">Complete list of Certifications</p>
+
+        <div class="row">
+          <div class="column" onclick="openGrid('mainSkills',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/developer.png"
+                alt="main skills section"
+                class="icon_skill"
+              />
+              <p>MAIN SKILLS</p>
+            </div>
+          </div>
+          <div class="column" onclick="openGrid('mobileDevelop',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/mobile_icon.png"
+                alt="mobile development skills"
+                class="icon_skill"
+              />
+              <p>MOBILE DEVELOPMENT</p>
+            </div>
+          </div>
+          <div class="column" onclick="openGrid('webDevelop',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/web_icon.png"
+                alt="web development skills"
+                class="icon_skill"
+              />
+              <p>WEB DEVELOPMENT</p>
+            </div>
+          </div>
+
+          <div class="column" onclick="openGrid('programmingLang',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/coding-language.png"
+                alt=""
+                class="icon_skill"
+              />
+              <p>PROGRAMMING LANGUAGES</p>
+            </div>
+          </div>
+          <div class="column" onclick="openGrid('techSupport',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/support.png"
+                alt="support development skills"
+                class="icon_skill"
+              />
+              <p>TECHINCAL SUPPORT</p>
+            </div>
+          </div>
+          <div class="column" onclick="openGrid('generalSkills',this);">
+            <div class="icon_container">
+              <img
+                src="res/media/skills.png"
+                alt="support development skills"
+                class="icon_skill"
+              />
+              <p>GENERAL SKILLS</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="mainSkills" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>Technical IT Analist</p>
+            </li>
+            <li>
+              <p>Technical Programmer</p>
+            </li>
+            <li>
+              <p>Google IT Support Professional</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="mobileDevelop" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>Fundamentos de Android</p>
+            </li>
+            <li>
+              <p>Desarrollo de aplicaciones con Android</p>
+            </li>
+            <li>
+              <p>Programando con Java para aplicaciones Android</p>
+            </li>
+          </ul>
+        </div>
+        <div id="webDevelop" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>Curso de React + Firebase</p>
+            </li>
+            <li>
+              <p>Diseñando páginas web con Bootstrap 4</p>
+            </li>
+            <li>
+              <p>WebApp: Introducción al desarrollo de aplicaciones web</p>
+            </li>
+          </ul>
+        </div>
+        <div id="programmingLang" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>Crash Course on Python</p>
+            </li>
+            <li>
+              <p>Curso Completo de SQL. Aprende desde 0</p>
+            </li>
+            <li>
+              <p>Curso Completo Python 3 - Desde las Bases hasta Django</p>
+            </li>
+          </ul>
+        </div>
+        <div id="techSupport" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>Technical Support Fundamentals</p>
+            </li>
+            <li>
+              <p>IT Security: Defense against the digital dark arts</p>
+            </li>
+            <li>
+              <p>System Administration and IT Infrastructure Services</p>
+            </li>
+            <li>
+              <p>Introducción a los Sistemas de Información Gerencial (MIS)</p>
+            </li>
+            <li>
+              <p>Operating Systems and You: Becoming a Power User</p>
+            </li>
+            <li>
+              <p>The Bits and Bytes of Computer Networking</p>
+            </li>
+            <li>
+              <p>Using Python to Interact with the Operating System</p>
+            </li>
+          </ul>
+        </div>
+        <div id="generalSkills" class="tab hide_content">
+          <span onclick="change_closeIcon_visibility(this)" class="closeButton">
+            &times;
+          </span>
+          <ul>
+            <li>
+              <p>HIENGLISH201.1x: Upper-Intermediate English: Business</p>
+            </li>
+            <li>
+              <p>
+                ML0101SP: Machine Learning (aprendizaje automatico) con Python:
+                una introduccion practica
+              </p>
+            </li>
+            <li>
+              <p>IngSoftware: Introducción a la Ingeniería del Software</p>
+            </li>
+            <li>
+              <p>
+                SIC101.4x: Fundamentos TIC para profesionales de negocios:
+                programación
+              </p>
+            </li>
+            <li>
+              <p>
+                SIC101.2x: Fundamentos TIC para profesionales de negocios:
+                Hardware
+              </p>
+            </li>
+            <li>
+              <p>
+                SIC101.3x: Fundamentos TIC para profesionales de negocios:
+                Desarrollo de Software
+              </p>
+            </li>
+            <li>
+              <p>IDB35x: Big Data sin misterios</p>
+            </li>
+            <li>
+              <p>IGP101.x: Introducción a la gestión de proyectos</p>
+            </li>
+            <li>
+              <p>IDB33x: Desafíos y oportunidades en la economía digital</p>
+            </li>
+
+            <li>
+              <p>Lánzate a la Innovación con Design Thinking</p>
+            </li>
+
+            <li>
+              <p>Introducción al Machine Learning (5.ª edición)</p>
+            </li>
+            <li>
+              <p>Curso Introducción al Machine Learning</p>
+            </li>
+            <li>
+              <p>Fundamentos del Marketing Digital</p>
+            </li>
+            <li>
+              <p>Estrategias de Marketing Online. Community Manager</p>
+            </li>
+            <li>
+              <p>Curso de Cloud Computing</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
