@@ -55,7 +55,6 @@ function lazy_show() {
 
 function toggle_project_info(info_element, button) {
   let project_info = document.getElementById(info_element);
-  console.log(info_element, button);
   if (project_info.classList.contains("close_project_info")) {
     button.classList.add("rotate180");
     button.querySelector("p").style.transform = "rotate(180deg)";
