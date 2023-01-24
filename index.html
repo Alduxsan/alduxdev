@@ -98,7 +98,7 @@
         <p class="section_title" id="experience_title">EXPERIENCE</p>
 
         <div class="projects_list">
-          <div class="projectItem">
+          <div class="projectItem right-padding">
             <div class="iconProject">
               <div class="project_icon_container">
                 <img src="res/media/projects/piptu.png" alt="PIPTU icon" />
@@ -114,13 +114,33 @@
                   in the Universidad de la República <br />
                 </p>
                 <span class="used_techs">
-                  <img src="res/media/tech_Icons/js.png" alt="javascript" />
-                  <img src="res/media/tech_Icons/html.png" alt="html" />
-                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/js.png"
+                    alt="javascript"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/html.png"
+                    alt="html"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/css.png"
+                    alt="css"
+                  />
+                  <button
+                    class="expand_info"
+                    onclick="toggle_project_info('project_1', this)"
+                  >
+                    <img src="res/media/expand-close.png" alt="expand info" />
+
+                    <p style="font-weight: bold">project info</p>
+                  </button>
                 </span>
               </div>
             </div>
-            <div class="projectInfo">
+            <div class="projectInfo close_project_info" id="project_1">
               <p>
                 Como único desarrollador estuve a cargo tanto del área Frontend
                 como Backend. Uno de los desafíos más interesantes durante el
@@ -143,12 +163,8 @@
               >
             </div>
           </div>
-          <div class="projectItem">
+          <div class="projectItem left-padding">
             <div class="iconProject">
-              <div class="project_icon_container">
-                <img src="res/media/projects/SIGLA.jpg" alt="SIGLA icon" />
-              </div>
-
               <div class="resume_container">
                 <p class="project_title">
                   Web App - Sistema de Gestion para Logistica Agraria (SIGLA)
@@ -158,14 +174,40 @@
                   de la industria cerealera en Uruguay
                 </p>
                 <span class="used_techs">
-                  <img src="res/media/tech_Icons/python.png" alt="python" />
-                  <img src="res/media/tech_Icons/django.png" alt="django" />
-                  <img src="res/media/tech_Icons/html.png" alt="html" />
-                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/python.png"
+                    alt="python"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/django.png"
+                    alt="django"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/html.png"
+                    alt="html"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/css.png"
+                    alt="css"
+                  />
+                  <button
+                    class="expand_info"
+                    onclick="toggle_project_info('project_2',this)"
+                  >
+                    <img src="res/media/expand-close.png" alt="expand info" />
+                    <p style="font-weight: bold">project info</p>
+                  </button>
                 </span>
               </div>
+              <div class="project_icon_container">
+                <img src="res/media/projects/SIGLA.jpg" alt="SIGLA icon" />
+              </div>
             </div>
-            <div class="projectInfo">
+            <div class="projectInfo close_project_info" id="project_2">
               <p>
                 Como miembro del equipo de desarrollo de Sauce Software, estuve
                 involucrado en todos los ámbitos del proyecto. Como
@@ -199,7 +241,7 @@
             </div>
           </div>
 
-          <div class="projectItem">
+          <div class="projectItem right-padding">
             <div class="iconProject">
               <div class="project_icon_container">
                 <img
@@ -214,14 +256,37 @@
                   Android App for the medical guards management.
                 </p>
                 <span class="used_techs">
-                  <img src="res/media/tech_Icons/android.png" alt="android" />
-                  <img src="res/media/tech_Icons/java.png" alt="java" />
-                  <img src="res/media/tech_Icons/python.png" alt="python" />
-                  <img src="res/media/tech_Icons/django.png" alt="django" />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/android.png"
+                    alt="android"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/java.png"
+                    alt="java"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/python.png"
+                    alt="python"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/django.png"
+                    alt="django"
+                  />
+                  <button
+                    class="expand_info"
+                    onclick="toggle_project_info('project_3',this)"
+                  >
+                    <img src="res/media/expand-close.png" alt="expand info" />
+                    <p style="font-weight: bold">project info</p>
+                  </button>
                 </span>
               </div>
             </div>
-            <div class="projectInfo">
+            <div class="projectInfo close_project_info" id="project_3">
               <p>
                 Como parte del equipo de desarrollo de Chimera Software me
                 encargué del desarrollo del backend y API (utilizando Django)
@@ -252,15 +317,8 @@
               >
             </div>
           </div>
-          <div class="projectItem">
+          <div class="projectItem left-padding">
             <div class="iconProject">
-              <div class="project_icon_container">
-                <img
-                  src="res/media/projects/puntoverde.png"
-                  alt="Punto verde icon"
-                />
-              </div>
-
               <div class="resume_container">
                 <p class="project_title">
                   Web Site - Punto Verde Nueva Palmira
@@ -270,13 +328,38 @@
                   ONG.
                 </p>
                 <span class="used_techs">
-                  <img src="res/media/tech_Icons/js.png" alt="javascript" />
-                  <img src="res/media/tech_Icons/html.png" alt="html" />
-                  <img src="res/media/tech_Icons/css.png" alt="css" />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/js.png"
+                    alt="javascript"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/html.png"
+                    alt="html"
+                  />
+                  <img
+                    class="icon_tech"
+                    src="res/media/tech_Icons/css.png"
+                    alt="css"
+                  />
+                  <button
+                    class="expand_info"
+                    onclick="toggle_project_info('project_4',this)"
+                  >
+                    <img src="res/media/expand-close.png" alt="expand info" />
+                    <p style="font-weight: bold">project info</p>
+                  </button>
                 </span>
               </div>
+              <div class="project_icon_container">
+                <img
+                  src="res/media/projects/puntoverde.png"
+                  alt="Punto verde icon"
+                />
+              </div>
             </div>
-            <div class="projectInfo">
+            <div class="projectInfo close_project_info" id="project_4">
               <p>
                 Como único desarrollador, estuve a cargo del diseño gráfico y
                 Frontend de la página. Se buscó generar calidez e inmersión en

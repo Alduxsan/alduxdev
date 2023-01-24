@@ -30,7 +30,7 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  background: url("../res/media/alduxPortrait1.png");
+  background: url("../res/media/alduxPortrait.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +189,6 @@ html {
 section {
   opacity: 0;
   transition: all 0.5s;
-  padding: 10%;
 }
 
 section .section_title {
@@ -206,6 +205,7 @@ section .section_title {
   font-family: rounded;
   background-color: var(--about_section);
   font-size: 1.8rem;
+  padding: 10%;
 }
 
 .about_content h3 {
@@ -258,6 +258,19 @@ section .section_title {
 
 /* EXPERIENCE SECTION */ /* EXPERIENCE SECTION */ /* EXPERIENCE SECTION */ /* EXPERIENCE SECTION */ /* EXPERIENCE SECTION */
 
+.rotate180 {
+  animation: rotate180 0.3s forwards;
+}
+
+.left-padding {
+  padding-right: 3%;
+  padding-left: 15%;
+}
+.right-padding {
+  padding-left: 3%;
+  padding-right: 15%;
+}
+
 .experience_content {
   font-family: rounded;
   background-color: var(--experience_section);
@@ -270,15 +283,13 @@ section .section_title {
 .projectItem {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   transition: all 0.5s;
   width: fit-content;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   align-content: center;
 }
 
 .iconProject {
-  margin: auto;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -291,7 +302,6 @@ section .section_title {
 
 .project_icon_container {
   width: 50%;
-  margin-right: 10px;
 }
 
 .resume_container {
@@ -315,14 +325,26 @@ section .section_title {
   transition: all 0.3s;
 }
 
-.used_techs img:hover {
+.used_techs .icon_tech:hover {
   width: 60px;
   background-color: rgba(255, 255, 255);
 }
 
+.expand_info {
+  width: fit-content;
+  border: none;
+  background-color: rgba(255, 222, 173, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.expand_info img:hover {
+  filter: invert(10);
+}
 .projectInfo {
   transition: all 0.2s;
-  font-size: 0;
   background-color: rgba(255, 255, 255, 0.473);
   margin-top: 10px;
   border-radius: 4px;
@@ -349,14 +371,18 @@ section .section_title {
   width: 40px;
 }
 
-.projectItem:hover .projectInfo {
+.close_project_info {
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+}
+.expand_project_info {
   font-size: 1.3rem;
-  padding: 2%;
   animation: fade-in 0.7s;
+  padding: 2%;
 }
 
-.projectItem:hover .projectInfo a {
-  animation: fade-in-left 0.5s;
+.projectInfo a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -710,6 +736,15 @@ section .section_title {
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
     transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes rotate180 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
   }
 }
 @-webkit-keyframes bounce-top {

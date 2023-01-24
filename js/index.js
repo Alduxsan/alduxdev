@@ -27,7 +27,6 @@ function openGrid(tabContent, clickedTab) {
 }
 
 function lazy_show() {
-  ``;
   const options = {
     rootMargin: "0px 0px -200px 0px",
   };
@@ -52,4 +51,23 @@ function lazy_show() {
   links.forEach((link) => {
     observer.observe(link);
   });
+}
+
+function toggle_project_info(info_element, button) {
+  let project_info = document.getElementById(info_element);
+  console.log(info_element, el);
+  if (project_info.classList.contains("close_project_info")) {
+    button.classList.add("rotate180");
+    button.querySelector("p").style.transform = "rotate(180deg)";
+    return project_info.classList.replace(
+      "close_project_info",
+      "expand_project_info"
+    );
+  }
+  button.classList.remove("rotate180");
+  button.querySelector("p").style.transform = "rotate(360deg)";
+  return project_info.classList.replace(
+    "expand_project_info",
+    "close_project_info"
+  );
 }
