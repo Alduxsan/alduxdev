@@ -6,19 +6,19 @@
     <title>Aldo Santarelli Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/mobile.css" />
   </head>
 
   <body>
     <div class="container">
-      <div class="header_container">
-        <div class="header_info_photo fade-in">
-          <div class="name_role">
-            <p id="name">ALDO SANTARELLI</p>
-            <div class="role">
-              <span class="typewriter"></span>
-              <p aria-label="fullstack developer">developer</p>
-            </div>
-          </div>
+      <div class="name_role fade-in-right">
+        <p id="main_title"><strong>Hi</strong> there!</p>
+        <p id="role"></p>
+      </div>
+
+      <div class="header_container fade-in">
+        <div class="header_img_container">
+          <img id="header_img" src="../res/media/headImage.jpg" alt="" />
         </div>
         <div class="sections" id="links_container">
           <a class="section_link" href="#about_section"
@@ -38,21 +38,45 @@
           ></a>
         </div>
       </div>
+
       <section class="about_content" id="about_section">
+        <div class="custom-shape-divider-top-1675475326">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <p class="section_title" id="about_title">ABOUT ME</p>
-        <p class="">
-          <strong>I love technology.</strong> I've been tinkering around
-          computers since I was 8 years old, getting into software and web
-          development has been a natural step for me. I also love cats, good
-          literature and board games.
-        </p>
+
+        <div class="about_header">
+          <div id="me"><img src="res/media/alduxPortrait.avif" alt="" /></div>
+
+          <p class="about_resume">
+            <strong>I love technology.</strong> I've been tinkering around
+            computers since I was 8 years old, getting into software and web
+            development has been a natural step for me. I also love cats, good
+            literature and board games.
+          </p>
+        </div>
+
         <h3 class="">What can I offer you?</h3>
-        <p class="">
-          If your company is looking for a junior Frontend or Full stack
-          developer, I'm your guy. By hiring me, you will not only improve your
-          human resources with someone committed to the company's objective,
-          capable of working alone or in teams. But you also hire a future
-          expert, since I am currently studying for an IT Analyst degree.
+        <p class="about_second_block">
+          If your company is looking for a Freelancer, Frontend or Fullstack
+          developer, I'm your guy. By hiring me, you will improve your human
+          resources with someone committed to the company's objectives, capable
+          of working alone or in teams. Also you will hire someone capable of
+          fill a good number of roles in emergency situations.
+          <br /><br />
+          I'm very comfortable with the most common code languages in web
+          development, and with their most commons frameworks (e.g. Javascript
+          and Python, with Django and React js).
         </p>
         <h3 class="contact_me">Let's work together!</h3>
         <div class="contact_icons_container">
@@ -95,8 +119,20 @@
         </div>
       </section>
       <section class="experience_content" id="experience_section">
+        <div class="custom-shape-divider-top-1675476785">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <p class="section_title" id="experience_title">EXPERIENCE</p>
-
         <div class="projects_list">
           <div class="projectItem right-padding">
             <div class="iconProject">
@@ -244,7 +280,8 @@
               <div class="resume_container">
                 <p class="project_title">Android App - Aplicación Mediguard,</p>
                 <p class="project_resume">
-                  Android App for the medical guards management.
+                  Android App for the medical guards management. The backend
+                  coded in Python (Django) with the app pointing to his API.
                 </p>
                 <span class="used_techs">
                   <img
@@ -371,6 +408,19 @@
         </div>
       </section>
       <section class="knowledge_content" id="knowledge_section">
+        <div class="custom-shape-divider-top-1675547194">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
         <p class="section_title" id="knowledge_title">KNOWLEDGE</p>
         <p class="subsection_title">Main Certifications</p>
 
@@ -513,6 +563,15 @@
             <li>
               <p>WebApp: Introducción al desarrollo de aplicaciones web</p>
             </li>
+            <li>
+              <p>UX/UI: diseño de interfaces y experiencias de usuario.</p>
+            </li>
+            <li>
+              <p>React - Guía definitiva</p>
+            </li>
+            <li>
+              <p>Aprender React + Firebase</p>
+            </li>
           </ul>
         </div>
         <div id="programmingLang" class="tab hide_content">
@@ -528,6 +587,9 @@
             </li>
             <li>
               <p>Curso Completo Python 3 - Desde las Bases hasta Django</p>
+            </li>
+            <li>
+              <p>Javascript: básico, intermedio y avanzado.</p>
             </li>
           </ul>
         </div>
@@ -603,7 +665,23 @@
             <li>
               <p>IDB33x: Desafíos y oportunidades en la economía digital</p>
             </li>
-
+            <li>
+              <p>IEST-CP1-2x: Introducción a la Inteligencia Artificial</p>
+            </li>
+            <li><p>IM.2x: Emprendimiento tecnológico</p></li>
+            <li>
+              <p>UAMY-CP2-3x: Introducción a la robótica e industria 4.0</p>
+            </li>
+            <li>
+              <p>
+                UML101x: Diagramas UML estructurales para la Ingeniería del
+                Software
+              </p>
+            </li>
+            <li>
+              <p>IDB35x: Big Data sin misterios</p>
+            </li>
+            <li><p>Modelos predictivos con Machine Learning</p></li>
             <li>
               <p>Lánzate a la Innovación con Design Thinking</p>
             </li>
@@ -626,8 +704,49 @@
           </ul>
         </div>
       </section>
+      <div class="custom-shape-divider-bottom-1675887392">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </div>
+    <footer>
+      <p id="together">Contact me:</p>
 
-    <script src="js/index.js"></script>
+      <a
+        class="contact_link footer_linkedin"
+        href="https://www.linkedin.com/in/santarelli-developer/"
+        target="_blank"
+        ><img
+          src="res/media/linkedin.png"
+          alt="linkedin contact icon"
+          id="linkedin"
+      /></a>
+
+      <a
+        class="contact_link footer_gmail"
+        href="mailto:aldosantarelli@gmail.com"
+        target="_blank"
+        ><img src="res/media/gmail.png" alt="gmail contact icon" id="gmail"
+      /></a>
+      <a
+        class="contact_link footer_github"
+        href="https://github.com/Alduxsan"
+        target="_blank"
+        ><img src="res/media/github.png" alt="github contact icon" id="github"
+      /></a>
+    </footer>
   </body>
+
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+  <script src="js/index.js"></script>
 </html>
